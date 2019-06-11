@@ -5,8 +5,7 @@ import time
 @itchat.msg_register(itchat.content.TEXT, isGroupChat=True)
 def reply_msg(msg):
     print("收到一条群["+msg['User']['NickName']+"]信息：", msg['ActualNickName'], msg['Content'])
-    userinfo = itchat.search_friends(userName='@10d812d1e2fdaa690497c05b02e9b3fd4d003bf58f6156f9b510cca3c9be43de')
-    print(userinfo)
+    
     
 
 
